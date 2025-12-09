@@ -1,0 +1,221 @@
+Windows Registry Editor Version 5.00
+
+
+; ||| KEYBOARD ||| ;
+[HKEY_CURRENT_USER\Control Panel\Keyboard]
+"KeyboardDelay"="0"
+"KeyboardSpeed"="31"
+"InitialKeyboardIndicators"="0"
+
+
+; ||| MOUSE ||| ;
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"MouseSpeed"="0"
+"MouseThreshold1"="0"
+"MouseThreshold2"="0"
+
+
+; || CURSOR SIZE || ;
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"CursorBaseSize"=dword:00000030 
+
+
+; ||| DISABLE PATH LENGTH LIMIT ||| ;
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"LongPathsEnabled"=dword:00000001
+
+
+; ||| STARTUP ||| ;
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]
+"Spotify"=-
+"SpotifyLauncher"=-
+"WINDHAWK"="A:\\EXE\\WINDHAWK\\windhawk.exe -tray-only"
+"STEAM"="A:\\EXE\\STEAM\\steam.exe"
+"TELEGRAM"="A:\\EXE\\TELEGRAM\\Telegram.exe"
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+"RtkAudUService"=-
+
+
+; ||| DATETIME ||| ;
+[HKEY_CURRENT_USER\Control Panel\International]
+"iFirstDayOfWeek"="0" ; First Day of Week = Monday
+"sShortDate"="d/M/yyyy" ; Date Format
+
+
+; ||| THEME ||| ;
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
+"AppsUseLightTheme"=dword:00000000 ; App Theme
+"SystemUsesLightTheme"=dword:00000000 ; System Theme
+"ColorPrevalence"=dword:00000000 ; Accent Color on Start Menu and TaskBar
+"EnableTransparency"=dword:00000001 ; Transparency
+
+
+; || HIGHLIGHT COLOR || ;
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"Hilight"="218 59 1"
+"HotTrackingColor"="218 59 1"
+
+
+; ||| HIDE RECYCLE BIN FROM DESKTOP ||| ;
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{645FF040-5081-101B-9F08-00AA002F954E}"=dword:00000001
+
+
+; ||| APPS IN BACKGROUND ||| ;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsRunInBackground"=dword:00000002
+
+
+; ||| TASKBAR ||| ;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"StartLayoutFile"=hex(2):25,00,53,00,59,00,53,00,54,00,45,00,4d,00,52,00,4f,00,\
+  4f,00,54,00,25,00,5c,00,4f,00,45,00,4d,00,5c,00,54,00,61,00,73,00,6b,00,62,\
+  00,61,00,72,00,4c,00,61,00,79,00,6f,00,75,00,74,00,4d,00,6f,00,64,00,69,00,\
+  66,00,69,00,63,00,61,00,74,00,69,00,6f,00,6e,00,2e,00,78,00,6d,00,6c,00,00,\
+  00
+"HideRecommendedSection"=dword:00000001 ; DISABLE RECOMMENDED IN START 
+
+; ||| DISABLE RECOMMENDED IN START ||| ;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\Education]
+"IsEducationEnvironment"=dword:00000001
+
+
+; || AUTOHIDE TASKBAR || ;
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\StuckRects3]
+"Settings"=hex:30,00,00,00,fe,ff,ff,ff,03,00,00,00,03,00,00,00,48,00,00,00,3c,\
+  00,00,00,00,00,00,00,64,05,00,00,00,0a,00,00,a0,05,00,00,78,00,00,00,01,00,\
+  00,00
+
+; || Widget || ;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\DSH]
+"AllowNewsAndInterests"=dword:00000000 
+
+; || Search Box || ;
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"SearchboxTaskbarMode"=dword:00000000 
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"DisableSearchBoxSuggestions"=dword:00000001 ; Web Search
+
+
+; || Touch KeyBoard || ;
+[HKEY_CURRENT_USER\Software\Microsoft\TabletTip\1.7]
+"TipbandDesiredVisibility"=dword:00000001 
+
+
+; ||| START MENU ||| ;
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Start]
+"VisiblePlaces"=hex:86,08,73,52,aa,51,43,42,9f,7b,27,76,58,46,59,d4 ; Settings Icon
+
+
+; ||| EXPLORER ||| ;
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"ShellState"=hex:24,00,00,00,1e,28,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,13,00,00,00,00,00,00,00,62,00,00,00 ; Single-Click
+"IconUnderline"=dword:00000002 ; Icon UnderLine When Pointing
+"ShowFrequent"=dword:00000000 
+"ShowCloudFilesInQuickAccess"=dword:00000000
+"ShowRecommendations"=dword:00000000
+
+
+
+
+; ||| EXPLORER ADVANCED ||| ;
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_IrisRecommendations"=dword:00000000 ; Recommendations
+"Start_TrackDocs"=dword:00000000 ; Recently Opened Items
+"Start_TrackProgs"=dword:00000000 ; App Launch Tracking
+"ShowTaskViewButton"="0" ; Task View Button
+"LaunchTo"=dword:00000001 ; Explorer Launch To ( This PC )
+"HideFileExt"=dword:00000000 ; File Extensions
+"EnableSnapAssistFlyout"=dword:00000000 ; Snap Assist
+"ShowSyncProviderNotifications"=dword:00000000 ; Sync Provider Notifications ( Ads )
+"MultiTaskingAltTabFilter"=dword:00000003 ; Tabs from Apps
+
+
+; ||| SYSTEM ||| ;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+"NetworkThrottlingIndex"=dword:ffffffff ; Network Throttling
+"SystemResponsiveness"=dword:00000000 ; System Responsiveness
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"Win32PrioritySeparation"=dword:00000028 ; Priority Separation
+
+
+; ||| POWER ||| ;
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
+"HiberbootEnabled"=dword:00000000 ; Fast Start-Up
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling]
+"PowerThrottlingOff"=dword:00000001 ; Power Throttling
+
+
+; ||| CLIPBOARD ||| ;
+[HKEY_CURRENT_USER\Software\Microsoft\Clipboard]
+"EnableClipboardHistory"=dword:00000001
+
+
+; || UNPIN || ;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\NonEnum]
+"{F874310E-B6B7-47DC-BC84-B9E6B38F5903}"=dword:00000001 ; Explorer Navigation Pane ( Home )
+"{E88865EA-0E1C-4E20-9AA6-EDCD0212C87C}"=dword:00000001 ; Explorer Navigation Pane ( Gallery )
+"{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}"=dword:00000001 ; Explorer Navigation Pane ( Network )
+
+; ||| HIDE DISK (B:\) ||| ;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoDrives"=dword:00000002
+
+
+; ||| UNPIN DISKS FROM NAV PANE ||| ;
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\DelegateFolders\{F5FB2C77-0E2F-4A16-A381-3E560C68BC83}]
+
+
+; ||| TELEMETRY ||| ;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000000
+"LimitDiagnosticLogCollection"=dword:00000001 
+"LimitDumpCollection"=dword:00000001 
+"LimitEnhancedDiagnosticDataWindowsAnalytics"=dword:00000000
+"DoNotShowFeedbackNotifications"=dword:00000001 
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection]
+"AllowTelemetry"=dword:00000000
+"MaxTelemetryAllowed"=dword:00000000
+
+
+; || CEIP || ;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows]
+"CEIPEnable"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SQMClient\Windows]
+"CEIPEnable"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM]
+"OptIn"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Messenger\Client]
+"CEIP"=dword:00000002
+
+
+; || REPORT || ;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PCHealth\ErrorReporting]
+"DoReport"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting]
+"DontSendAdditionalData"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+
+
+; || ACTIVITY FEED || ;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableActivityFeed"=dword:00000000 
+"PublishUserActivities"=dword:00000000 
+"UploadUserActivities"=dword:00000000 
+
+
+; || ADVERSTISING || ;
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo]
+"DisabledByGroupPolicy"=dword:00000001

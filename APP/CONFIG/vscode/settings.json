@@ -1,0 +1,209 @@
+{
+    // https://pastebin.com/pWrGtXBB //
+    // *** FILES *** //
+    "files.encoding": "utf8",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    // *** EXPLORER *** //
+    "explorer.confirmDelete": false,
+    // *** WINDOW *** //
+    "window.zoomLevel": 1,
+    "window.titleBarStyle": "custom",
+    "window.menuBarVisibility": "hidden",
+    "window.customTitleBarVisibility": "auto",
+    // *** TELEMETRY *** //
+    "telemetry.telemetryLevel": "off",
+    "editor.experimental.treeSitterTelemetry": false,
+    "python.analysis.reportExtraTelemetry": false,
+    // *** WORKBENCH *** //
+    // MAIN //
+    "workbench.activityBar.location": "top",
+    "workbench.editor.wrapTabs": true,
+    // THEME //
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Monokai Pro",
+    // *** GIT *** //
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": true,
+    // *** LANGUAGE *** //
+    // PYTHON //
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.languageServer": "Pylance",
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+    },
+    // JSON //
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    // *** TERMINAL *** //
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorStyleInactive": "none",
+    "terminal.integrated.defaultProfile.linux": "fish",
+    // *** EDITOR *** //
+    // MAIN //
+    "editor.cursorBlinking": "solid",
+    "editor.bracketPairColorization.enabled": false,
+    "editor.tabCompletion": "on",
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        99
+    ],
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    // FONT //
+    "editor.fontSize": 15,
+    "editor.lineHeight": 1.7,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "JetBrainsMono NF",
+    // TOKEN COLOR //
+    "editor.tokenColorCustomizations": {
+        "strings": "#89CA78",
+        "numbers": "#D19A66",
+        "comments": {
+            "fontStyle": "italic",
+            "foreground": "#5C6370"
+        },
+        "textMateRules": [
+            {
+                "name": "SOURCE | ATTRIBUTE",
+                "scope": [
+                    "source.python",
+                    "meta.attribute.python"
+                ],
+                "settings": {
+                    "foreground": "#BBBBBB"
+                }
+            },
+            {
+                "name": "VARIABLE PARAMETER",
+                "scope": "variable.parameter",
+                "settings": {
+                    "foreground": "#FE8019"
+                }
+            },
+            {
+                "name": "KEYWORD",
+                "scope": [
+                    "keyword.control",
+                    "keyword.operator.logical.python",
+                    "storage.type.function",
+                    "storage.type.class.python",
+                ],
+                "settings": {
+                    "fontStyle": "italic",
+                    "foreground": "#FB4934",
+                }
+            },
+            {
+                "name": "OPERATOR",
+                "scope": [
+                    "keyword.operator",
+                    "storage",
+                    "support.function.magic.python",
+                    "keyword.operator.comparison.python",
+                    "keyword.operator.arithmetic.python",
+                    "keyword.operator.assignment.python",
+                    "punctuation.separator.annotation.result.python",
+                    "constant.character.escape.python",
+                    "punctuation.definition.decorator.python",
+                ],
+                "settings": {
+                    "foreground": "#C678DD"
+                }
+            },
+            {
+                "name": "INVALID",
+                "scope": "invalid.illegal",
+                "settings": {
+                    "fontStyle": "italic bold underline",
+                    "foreground": "#FF5555",
+                }
+            },
+            {
+                "name": "CALL FUNCTION",
+                "scope": "meta.function-call.python",
+                "settings": {
+                    "foreground": "#61AFEF",
+                }
+            },
+            {
+                "name": "BRACKETS",
+                "scope": [
+                    "punctuation.definition.list.begin.python",
+                    "punctuation.definition.list.end.python",
+                ],
+                "settings": {
+                    "foreground": "#D3869B",
+                }
+            },
+            {
+                "name": "PARENTHESES",
+                "scope": [
+                    "punctuation.parenthesis.begin.python",
+                    "punctuation.parenthesis.end.python",
+                    "punctuation.definition.parameters.begin.python",
+                    "punctuation.definition.parameters.end.python",
+                    "punctuation.definition.arguments.begin.python",
+                    "punctuation.definition.arguments.end.python",
+                ],
+                "settings": {
+                    "foreground": "#ABC023",
+                }
+            },
+            {
+                "name": "BRACES",
+                "scope": [
+                    "constant.character.format.placeholder.other.python",
+                    "punctuation.definition.dict.begin.python",
+                    "punctuation.definition.dict.end.python",
+                ],
+                "settings": {
+                    "foreground": "#6495FF",
+                }
+            },
+        ],
+    },
+    // SEMANTIC TOKEN COLOR //
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+        "rules": {
+            // DEFAULT //
+            "variable": "#BBBBBB",
+            "module": "#BBBBBB",
+            "property": "#BBBBBB",
+            // CLASS //
+            "class": "#EF596F",
+            "class.typeHint": "#E5C07B",
+            // PARAMETER //
+            "parameter": "#FE8019",
+            "selfParameter": "#C678DD",
+            // BUILTIN //
+            "class.builtin": "#2BBAC5",
+            "function.builtin": "#2BBAC5",
+            "builtinConstant": "#EF596F",
+            // FUNCTION | METHOD //
+            "function": "#61AFEF",
+            "magicFunction": "#61AFEF",
+            "method": "#61AFEF",
+            // DECLARATION //
+            "function.declaration": "#FABD2F",
+            "method.declaration": "#FABD2F",
+            // DECORATOR //
+            "class.decorator": "#83A598",
+            "module.decorator": "#83A598",
+            "property.decorator": "#83A598",
+        },
+    },
+    // *** EXTENSION *** //
+    // https://docs.astral.sh/ruff/settings/#lint_exclude //
+    "ruff.format.preview": true,
+    "ruff.lint.preview": true,
+    "chat.commandCenter.enabled": false,
+}

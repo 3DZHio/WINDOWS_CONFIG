@@ -1,0 +1,46 @@
+[general]
+### IMPORT ###
+import = [
+    ## THEME ##
+    "~/.config/alacritty/theme.toml",
+]
+
+
+### SHELL ###
+[terminal]
+shell = { program = "/usr/bin/fish", args = ["-C", "fastfetch"] }
+
+
+### FONT ###
+[font]
+size = 16.0
+normal = { family = "JetBrainsMonoNerdFont", style = "Regular" }
+bold = { family = "JetBrainsMonoNerdFont", style = "Bold" }
+italic = { family = "JetBrainsMonoNerdFont", style = "Italic" }
+bold_italic = { family = "JetBrainsMonoNerdFont", style = "BoldItalic" }
+
+
+### CURSOR ###
+[cursor]
+style = { shape = "Beam", blinking = "Never" }
+
+
+### SELECTION ###
+[selection]
+save_to_clipboard = true
+
+
+### WINDOW ###
+[window]
+decorations_theme_variant = "Dark"
+startup_mode = "Fullscreen"
+opacity = 0.77
+
+### KEYBOARD ###
+[keyboard]
+bindings = [
+    { key = "Q", mods = "Control | Shift", action = "Quit" },
+    { key = "Й", mods = "Control | Shift", action = "Quit" },
+    { key = "T", mods = "Control | Shift", action = "Minimize" },
+    { key = "Е", mods = "Control | Shift", action = "Minimize" },
+    ]

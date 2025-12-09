@@ -1,0 +1,241 @@
+[
+    // *** REMOVE *** //
+    {
+        "command": "-cursorPageUp"
+    },
+    {
+        "command": "-cursorPageDown"
+    },
+    {
+        "command": "-cursorPageUpSelect"
+    },
+    {
+        "command": "-cursorPageDownSelect"
+    },
+    {
+        "command": "-workbench.action.nextEditor"
+    },
+    {
+        "command": "-workbench.action.previousEditor"
+    },
+    {
+        "command": "-actions.find"
+    },
+    {
+        "command": "-workbench.action.findInFiles"
+    },
+    {
+        "command": "-editor.action.nextMatchFindAction"
+    },
+    {
+        "command": "-editor.action.previousMatchFindAction"
+    },
+    {
+        "command": "-editor.action.nextSelectionMatchFindAction"
+    },
+    {
+        "command": "-editor.action.previousSelectionMatchFindAction"
+    },
+    {
+        "command": "-editor.action.startFindReplaceAction"
+    },
+    {
+        "command": "-editor.action.startFindReplaceAction"
+    },
+    {
+        "command": "-workbench.action.replaceInFiles"
+    },
+    {
+        "command": "-welcome.showNewFileEntries"
+    },
+    {
+        "command": "-workbench.action.closeWindow"
+    },
+    {
+        "command": "-workbench.action.newWindow"
+    },
+    {
+        "command": "-workbench.action.openSettings"
+    },
+    {
+        "command": "-workbench.action.moveEditorLeftInGroup"
+    },
+    {
+        "command": "-workbench.action.moveEditorRightInGroup"
+    },
+    {
+        "command": "-workbench.action.terminal.openNativeConsole"
+    },
+    {
+        "command": "-workbench.action.files.newUntitledFile"
+    },
+    {
+        "command": "-workbench.action.showCommands"
+    },
+    {
+        "command": "-editor.action.accessibilityHelp"
+    },
+    {
+        "command": "-editor.action.accessibleView"
+    },
+    {
+        "command": "-editor.action.indentLines"
+    },
+    {
+        "command": "-editor.action.outdentLines"
+    },
+    {
+        "command": "-editor.action.formatDocument"
+    },
+    {
+        "command": "-editor.action.formatDocument.none"
+    },
+    {
+        "command": "-editor.action.selectHighlights"
+    },
+    {
+        "command": "-editor.action.changeAll"
+    },
+    {
+        "command": "-selectAllSearchEditorMatches"
+    },
+    {
+        "command": "-editor.action.selectToBracket"
+    },
+    {
+        "command": "-editor.action.jumpToBracket"
+    },
+    {
+        "command": "-editor.action.selectToBracket"
+    },
+    {
+        "command": "-editor.action.jumpToBracket"
+    },
+    {
+        "command": "-workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "command": "-workbench.action.terminal.new"
+    },
+    {
+        "command": "-workbench.action.files.openFile"
+    },
+    {
+        "command": "-workbench.action.files.openFolder"
+    },
+    {
+        "command": "-workbench.action.openRecent"
+    },
+    {
+        "command": "-git.clone"
+    },
+    {
+        "command": "-acceptSelectedSuggestion"
+    },
+
+    
+    // *** ADD *** //
+    // COMMANDS //
+    {
+        "key": "ctrl+shift+p",
+        "command": "workbench.action.showCommands"
+    },
+    // EXPLORER //
+    {
+        "key": "alt+f1",
+        "command": "explorer.newFolder"
+    },
+    {
+        "key": "alt+f2",
+        "command": "explorer.newFile"
+    },
+    // REPLACE //
+    {
+        "key": "ctrl+f",
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "workbench.action.replaceInFiles"
+    },
+    // INDENT || OUTDENT //
+    {
+        "key": "tab",
+        "command": "editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+    },
+    // FORMATTING //
+    {
+        "key": "f1",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    // CHANGE ALL //
+    {
+        "key": "f2",
+        "command": "editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    // UPPER | LOWER //
+    {
+        "key": "ctrl+shift+pageup",
+        "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "ctrl+shift+pagedown",
+        "command": "editor.action.transformToLowercase"
+    },
+    // BRACKETS //
+    {
+        "key": "pageup",
+        "command": "editor.action.selectToBracket"
+    },
+    {
+        "key": "pagedown",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    // TERMINAL //
+    {
+        "key": "ctrl+[Backquote]",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+shift+[Backquote]",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    // OPEN //
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.files.openFile",
+        "when": "true"
+    },
+    {
+        "key": "ctrl+k ctrl+o",
+        "command": "workbench.action.files.openFolder",
+        "when": "openFolderWorkspaceSupport"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "workbench.action.openRecent"
+    },
+    // CLONE //
+    {
+        "key": "ctrl+alt+[Backslash]",
+        "command": "git.clone"
+    },
+    // SUGGESTION //
+    {
+        "key": "enter",
+        "command": "acceptSelectedSuggestion",
+        "when": "acceptSuggestionOnEnter && suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+    }
+]

@@ -1,0 +1,80 @@
+{
+  // *** SCHEMA *** //
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  // *** DISPLAY *** //
+  "display": {
+    "separator": "  "
+  },
+  // *** LOGO *** //
+  "logo": {
+    "source": "Apple",
+    "padding": {
+      "top": 5,
+      "left": 10,
+      "right": 10
+    }
+  },
+  // *** MODULES *** //
+  "modules": [
+    "break",
+    "break",
+    "break",
+    "break",
+    "break",
+    "break",
+    "break",
+    "break",
+    {
+      "type": "custom",
+      "outputColor": "magenta",
+      "format": "┌───────────────────────────────────────────────┐"
+    },
+    "break",
+    // BEGIN //
+    {
+      "type": "os",
+      "format": "{pretty-name}",
+      "key": "    "
+    },
+    {
+      "type": "kernel",
+      "format": "{release}",
+      "key": "    "
+    },
+    {
+      "type": "packages",
+      "key": "    "
+    },
+    {
+      "type": "host",
+      "key": "    󰘚"
+    },
+    {
+      "type": "cpu",
+      "key": "    󰍛"
+    },
+    {
+      "type": "gpu",
+      "key": "    󰍹"
+    },
+    {
+      "type": "memory",
+      "key": "    "
+    },
+    {
+      "type": "disk",
+      "key": "    "
+    },
+    {
+      "type": "uptime",
+      "key": "    󰥔"
+    },
+    // END //
+    "break",
+    {
+      "type": "custom",
+      "outputColor": "magenta",
+      "format": "└───────────────────────────────────────────────┘"
+    }
+  ]
+}
