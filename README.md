@@ -14,8 +14,6 @@
 
 [WINDHAWK](https://ramensoftware.com/downloads/windhawk_setup.exe)
 
-[POWERTOYS](https://github.com/microsoft/PowerToys/releases/download/v0.95.0/PowerToysUserSetup-0.95.0-x64.exe)
-
 [BCUNINSTALLER](https://github.com/Klocman/Bulk-Crap-Uninstaller/releases/download/v5.9/BCUninstaller_5.9.0_portable.zip)
 
 [PYTHON](https://www.python.org/ftp/python/3.13.0/python-3.13.0-amd64.exe)
